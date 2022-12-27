@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="Form.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Truck Maintenance Log</title>
 </head>
 <body>
-    <h1>Truck Maintenance Log</h1>
-    
+
+    <script>
+        var time = new Date();
+        var date =  (time.getMonth() + 1) + '-' + time.getDate() + '-' + time.getFullYear();
+        var today = time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds();
+        var dateTime = date + ' ' + time;
+
+    </script>
+
+
+    <div id="top">
+        <H1 id="company">Capital Concrete</H1>
+        <hr>
+        <h2 id="title">Truck Maintenance Log</h2>
+    </div>   
+      
 </body>
 </html>

@@ -1,0 +1,25 @@
+
+#top {
+     background-color: black;
+     border-radius: 5px;
+}
+
+
+#company {
+    text-align: center;
+    color:cornflowerblue;
+    text-shadow: .05em .05em .15em rgb(159, 85, 228);
+}
+
+#title {
+    text-align: center;
+    color:cornflowerblue;
+    text-shadow: .05em .05em .15em rgb(159, 85, 228);
+}
+
+hr {
+    color: rgb(0, 0, 0);
+    border-bottom-width: .5em;
+    border-radius: 50%;
+    
+}
