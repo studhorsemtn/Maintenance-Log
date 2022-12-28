@@ -1,24 +1,25 @@
 
-#top {
-     background-color: black;
-     border-radius: 5px;
-}
 
 
 #company {
     text-align: center;
-    color:cornflowerblue;
-    text-shadow: .05em .05em .15em rgb(159, 85, 228);
+    color:rgba(4, 20, 163, 0.993);
+    text-shadow: .05em .05em .15em rgb(117, 101, 101);
 }
 
 #title {
     text-align: center;
-    color:cornflowerblue;
-    text-shadow: .05em .05em .15em rgb(159, 85, 228);
+    color:rgba(4, 20, 163, 0.993);
+    text-shadow: .05em .05em .15em rgb(117, 101, 101);
 }
 
-hr {
-    color: rgba(255, 255, 255, 0.616);
-    border-radius: 10%;
-    
+hr:not([size]) {
+    height: 5px;
+}
+
+.row hr {
+    width: 75%;   
+    margin: 5px auto;
+    background-color: #000000;
+    border-radius: 100px;    
 }
