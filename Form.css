@@ -1,15 +1,13 @@
-
-
-
 #company {
     text-align: center;
-    color:rgba(4, 20, 163, 0.993);
+    color: rgba(4, 20, 163, 0.993);
     text-shadow: .05em .05em .15em rgb(117, 101, 101);
 }
 
 #title {
     text-align: center;
-    color:rgba(4, 20, 163, 0.993);
+    margin-bottom: 2em;
+    color: rgba(4, 20, 163, 0.993);
     text-shadow: .05em .05em .15em rgb(117, 101, 101);
 }
 
@@ -18,8 +16,16 @@ hr:not([size]) {
 }
 
 .row hr {
-    width: 75%;   
+    width: 75%;
     margin: 5px auto;
     background-color: #000000;
-    border-radius: 100px;    
+    border-radius: 100px;
+}
+
+.row {
+    margin: 5px;
+}
+
+#mechanic {
+    margin-left: 0.5rem ;
 }
