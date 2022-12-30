@@ -11,7 +11,7 @@
     <title>Maintenance Form</title>
 </head>
 
-<body>
+<body class="background">
 
 
     <!-- Begin Header -->
@@ -29,56 +29,58 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <label for="datetime">Date &#38 Time</label>
+                <label for="datetime">Date &#38 Time:</label>
                 <input type="datetime-local" name="datetime" id="datetime">
             </div>
             <div class="col">
-                <label for="equipment">Equipment</label>
-                <input type="text" name="equipment" id="equipment">
+                <label for="equipment">Equipment:</label>
+                <select name="Equipment" id="equipment">
+                    <optgroup label="Trucks">
+                        <option value="75">75</option>
+                        <option value="21">21</option>
+                    </optgroup>
+                    <optgroup label="Mixers">
+                        <option value="26">26</option>
+                        <option value="95">95</option>
+                    </optgroup>
+                    <optgroup label="Pickups">
+                        <option value="Ford2wd">Ford 2WD</option>
+                        <option value="Ford4wd">Ford 4WD</option>
+                    </optgroup>
+                </select>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <label for="milage">Milage &#47 Hrs</label>
+                <label for="milage">Milage:</label>
                 <input type="number" name="milage" id="milage">
             </div>
             <div class="col">
-                <label for="mechanic">Mechanic</label>
-                <input type="text" name="mechanic" id="mechanic">
+                <label for="hours">Hours:</label>
+                <input type="number" name="hours" id="hours">
             </div>
+            
         </div>
         <div class="row">
             <div class="col">
-                <label for="description">Work Performed</label>
-                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                <label for="mechanic">Mechanic:</label>
+                <input type="text" name="mechanic" id="mechanic">
             </div>
+
             <div class="col">
-                <label for="parts">Parts Used</label>
-                <input type="text" name="parts" id="parts">
+                <label for="description">Work Performed</label>
+                <textarea name="description" id="description" cols="30" rows="1"></textarea>
+            </div>            
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <label for="parts">Parts Used:</label>
+                <textarea name="Parts" id="parts" cols="30" rows="1"></textarea>
             </div>
         </div>
     </div>
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- End Form -->
 
 
 
