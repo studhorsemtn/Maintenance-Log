@@ -28,6 +28,7 @@ hr:not([size]) {
 
 .container {
     border-radius: 100px;
+    background-image: url(\\Images\logo.png);
     background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(158, 157, 108, 0.952))
 }
 
