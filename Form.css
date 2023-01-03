@@ -1,7 +1,5 @@
 #company {
     text-align: center;
-    color: rgba(4, 20, 163, 0.993);
-    text-shadow: .05em .05em .15em rgb(117, 101, 101);
 }
 
 #title {
@@ -28,13 +26,14 @@ hr:not([size]) {
 
 .container {
     border-radius: 100px;
-    background-image: url(\\Images\logo.png);
     background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(158, 157, 108, 0.952))
 }
 
 label {
     width: 25%;
     margin: 0 2em;
+    color: black;
+    font-weight: bold;
 }
 
 input,
@@ -42,4 +41,15 @@ textarea,
 select {
     width: 75%;
     margin: 0 2em;
+}
+
+.fa-wrench,
+.fa-clock,
+.fa-gauge,
+.fa-truck-monster,
+.fa-fan,
+.fa-calendar-days,
+.fa-gear{
+    color: white;
+    margin-right: 0.3rem;
 }

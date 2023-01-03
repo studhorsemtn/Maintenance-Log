@@ -7,25 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/4dc34d9f3c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Form.css">
     <title>Maintenance Form</title>
 </head>
 
-<body class="background">
+<body>
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="C:\Maintenance Log\Images\logo.png" alt="Logo" style="width:40px;" class="rounded-pill">
-          </a>
+            <a class="navbar-brand" href="Form.html">
+                <img src="\Maintenance Log\Images\logo.png" alt="Logo" style="width:40px;" class="rounded-pill">
+            </a>
         </div>
-      </nav>
+    </nav>
 
 
     <!-- Begin Header -->
 
     <header class="row" id="top">
-        <H1 id="company">Capital Concrete</H1>
+        <H1 id="company"><img src="\Maintenance Log\Images\logo.png" alt="Logo"></H1>
         <hr>
         <h2 id="title">Truck Maintenance Log</h2>
     </header>
@@ -37,11 +38,11 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <label for="datetime">Date &#38 Time:</label>
+                <label for="datetime"><i class="fa-solid fa-calendar-days"></i>Date &#38 Time:</label>
                 <input type="datetime-local" name="datetime" id="datetime">
             </div>
             <div class="col">
-                <label for="equipment">Equipment:</label>
+                <label for="equipment"><i class="fa-solid fa-truck-monster"></i>Equipment</label>
                 <select name="Equipment" id="equipment">
                     <optgroup label="Trucks">
                         <option value="75">75</option>
@@ -60,34 +61,37 @@
         </div>
         <div class="row">
             <div class="col">
-                <label for="milage">Milage:</label>
+                <label for="milage"><i class="fa-solid fa-gauge"></i>Milage:</label>
                 <input type="number" name="milage" id="milage">
             </div>
             <div class="col">
-                <label for="hours">Hours:</label>
+                <label for="hours"><i class="fa-regular fa-clock"></i>Hours:</label>
                 <input type="number" name="hours" id="hours">
             </div>
-            
+
         </div>
         <div class="row">
             <div class="col">
-                <label for="mechanic">Mechanic:</label>
+                <label for="mechanic" ><i class="fa-solid fa-wrench"></i>Mechanic</label>
                 <input type="text" name="mechanic" id="mechanic">
             </div>
 
             <div class="col">
-                <label for="description">Work Performed</label>
+                <label for="description"><i class="fa-solid fa-fan"></i>Work Performed</label>
                 <textarea name="description" id="description" cols="30" rows="1"></textarea>
-            </div>            
+            </div>
         </div>
         <div class="row">
-            <div class="col-6">
-                <label for="parts">Parts Used:</label>
+            <div class="col">
+                <label for="parts"><i class="fa-solid fa-gear"></i>Parts Used:</label>
                 <textarea name="Parts" id="parts" cols="30" rows="1"></textarea>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-outline-info btn-lg">Submit</button>
             </div>
         </div>
     </div>
-    
+
     <!-- End Form -->
 
 
