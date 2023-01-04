@@ -1,3 +1,16 @@
+#navbar {
+    background-color: rgb(85, 115, 248);    
+}
+
+.navbar-toggler,
+.collapsed,
+.collapse {
+    border: none;
+}
+
+
+
+
 #company {
     text-align: center;
 }
@@ -9,15 +22,19 @@
     text-shadow: .05em .05em .15em rgb(117, 101, 101);
 }
 
-hr:not([size]) {
-    height: 5px;
+
+
+hr.blue {
+    height: 3px;
+    opacity: 100%;
+    border-radius: 50%;
+    width: 50%;
+    margin: 2px auto;
+    background-color: rgb(4, 36, 177);
 }
 
-.row hr {
-    width: 50%;
-    margin: 5px auto;
-    background-color: #0344f8;
-    border-radius: 50%;
+.container{
+    padding: 1em;
 }
 
 .row {
@@ -25,7 +42,7 @@ hr:not([size]) {
 }
 
 .container {
-    border-radius: 100px;
+    border-radius: 5rem;
     background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(158, 157, 108, 0.952))
 }
 
@@ -49,7 +66,14 @@ select {
 .fa-truck-monster,
 .fa-fan,
 .fa-calendar-days,
-.fa-gear{
+.fa-gear {
     color: white;
     margin-right: 0.3rem;
+}
+
+#subButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
