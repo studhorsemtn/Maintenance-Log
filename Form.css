@@ -1,21 +1,53 @@
+html {
+    height: auto;
+    top: 40px;
+}
+
+
+
+body {
+    min-height: 100%;
+    background-image: linear-gradient(.25turn, #cdcddd, #1e78ed);
+    background-size: auto;    
+}
+
+
+
+#collapsibleNavbar>ul {
+    margin: auto;
+}
+
+#navbar>div>a>img {
+    width: 3rem;
+
+}
+
+
 #navbar {
-    background-color: rgb(85, 115, 248);    
+    background-image: linear-gradient(.75turn, #cdcddd, #1e78ed);
+    box-shadow: 0rem .25rem .25rem rgb(118, 116, 122);
+    border-radius: 12px;    
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: .05rem 1rem;
 }
 
-.navbar-toggler,
-.collapsed,
-.collapse {
-    border: none;
+#navbar a {
+    color: black;    
 }
-
-
 
 
 #company {
     text-align: center;
+    margin-top:  100px;
 }
 
-#title {
+#company>img {
+    width: 6rem;
+}
+
+.title {
     text-align: center;
     margin-bottom: 2em;
     color: rgba(4, 20, 163, 0.993);
@@ -33,22 +65,20 @@ hr.blue {
     background-color: rgb(4, 36, 177);
 }
 
-.container{
-    padding: 1em;
-}
 
-.row {
-    margin: 2%;
-}
+
+
+
 
 .container {
+    padding: 1em;
+    margin-bottom: 5rem;
     border-radius: 5rem;
-    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(158, 157, 108, 0.952))
 }
+
 
 label {
     width: 25%;
-    margin: 0 2em;
     color: black;
     font-weight: bold;
 }
@@ -57,7 +87,10 @@ input,
 textarea,
 select {
     width: 75%;
-    margin: 0 2em;
+}
+
+.form-control {
+    border: .2rem solid gray;
 }
 
 .fa-wrench,
@@ -67,13 +100,26 @@ select {
 .fa-fan,
 .fa-calendar-days,
 .fa-gear {
-    color: white;
+    color: rgb(107, 105, 112);
     margin-right: 0.3rem;
 }
 
 #subButton {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+}
 
+.btn-primary {
+    color: rgb(0, 0, 0);
+    background-color: #85edffa6;
+    border-color: #0d6efd;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
 }
