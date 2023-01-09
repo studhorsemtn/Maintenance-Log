@@ -76,6 +76,11 @@ hr.blue {
     border-radius: 5rem;
 }
 
+div {
+    
+    align-items: flex-end;
+}
+
 
 label {
     width: 25%;
@@ -91,6 +96,8 @@ select {
 
 .form-control {
     border: .2rem solid gray;
+    border-radius: 12px;
+    
 }
 
 .fa-wrench,
@@ -101,7 +108,7 @@ select {
 .fa-calendar-days,
 .fa-gear {
     color: rgb(107, 105, 112);
-    margin-right: 0.3rem;
+    margin-right: 0.2rem;
 }
 
 #subButton {
