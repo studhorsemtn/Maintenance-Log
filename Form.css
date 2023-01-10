@@ -12,6 +12,15 @@ body {
 }
 
 
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+
 
 #collapsibleNavbar>ul {
     margin: auto;
@@ -96,8 +105,8 @@ select {
 
 .form-control {
     border: .2rem solid gray;
-    border-radius: 12px;
-    
+    border-radius: 12px;   
+    box-shadow: 0 .25rem greenyellow; 
 }
 
 .fa-wrench,
@@ -123,10 +132,3 @@ select {
     border-color: #0d6efd;
 }
 
-.navbar-toggler,
-.navbar-toggler:focus,
-.navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
-    border: none;
-}
