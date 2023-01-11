@@ -19,7 +19,7 @@
 
     <nav class="navbar navbar-expand-xxl navbar-light" id="navbar">
         <div class="container-fluid">
-            <a class="navbar-brand rounded-circle" href="index.html"> <img src="\maintenance_log\Images\logo.png"
+            <a class="navbar-brand rounded-circle" href="index.php"> <img src="\maintenance_log\Images\logo.png"
                     alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="vehicleInfo.html">Vehicle Information</a>
+                        <a class="nav-link" href="vehicleInfo.php">Vehicle Information</a>
                     </li>                    
                 </ul>
             </div>
@@ -50,7 +50,7 @@
 
     <!-- Begin Form -->
 
-    <form action="form.php" method="post">
+    <form action="connect.php" method="post">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -105,7 +105,7 @@
                     <textarea name="Parts" class="form-control" id="parts" cols="30" rows="1" required></textarea>
                 </div>
                 <div class="col" id="subButton">
-                    <button type="submit" class="btn btn-primary rounded-circle">Submit</button>
+                    <button type="submit"  class="btn btn-primary rounded-circle">Submit</button>
                 </div>
             </div>
         </div>

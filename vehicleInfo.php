@@ -47,14 +47,14 @@
   <!-- Begin Navbar -->
   <nav class="navbar navbar-expand-xxl  navbar-light" id="navbar">
     <div class="container-fluid">
-      <a class="navbar-brand rounded-pill" href="index.html"> <img src="\maintenance_log\Images\logo.png" alt="Logo"></a>
+      <a class="navbar-brand rounded-pill" href="index.php"> <img src="\maintenance_log\Images\logo.png" alt="Logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse text-end" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="index.php">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Vehicle Information</a>
