@@ -50,7 +50,7 @@
 
     <!-- Begin Form -->
 
-    <form action="">
+    <form action="form.php" method="post">
         <div class="container">
             <div class="row">
                 <div class="col">
