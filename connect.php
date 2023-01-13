@@ -36,7 +36,7 @@
 
         // Performing insert query execution
         // here our table name is maintenancelog
-        $sql = "INSERT INTO maintenancelog VALUES ('$Id', '$DateTime', '$Equipment', '$Milage', '$Hours', '$Mechanic', '$WorkPerformed', '$PartsUsed')";
+        $sql = "INSERT INTO maintenancelog VALUES ('$DateTime', '$Equipment', '$Milage', '$Hours', '$Mechanic', '$WorkPerformed', '$PartsUsed')";
 
         if (mysqli_query($conn, $sql)) {
             echo "<h3>data stored in a database successfully."
