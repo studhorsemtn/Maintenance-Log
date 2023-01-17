@@ -12,6 +12,8 @@
     <center>
         <?php
 
+        $DateTime = $Equipment = $Milage = $Hours = $Mechanic = $WorkPerformed = $PartsUsed = "";
+
         // servername => localhost
         // username => root
         // password => empty
@@ -25,30 +27,40 @@
         }
 
 
-        // Taking all 7 values from the form data(input)
-        $DateTime =  $_REQUEST['datetime'];
-        $Equipment = $_REQUEST['Equipment'];
-        $Milage =  $_REQUEST['milage'];
-        $Hours = $_REQUEST['hours'];
-        $Mechanic = $_REQUEST['mechanic'];
-        $WorkPerformed = $_REQUEST['description'];
-        $PartsUsed = $_REQUEST['Parts'];
+        if (isset($_POST['Submit'])) {
+            // Taking all 7 values from the form data(input)
+            $DateTime =  $_REQUEST['datetime'];
+            $Equipment = $_REQUEST['Equipment'];
+            $Milage =  $_REQUEST['milage'];
+            $Hours = $_REQUEST['hours'];
+            $Mechanic = $_REQUEST['mechanic'];
+            $WorkPerformed = $_REQUEST['description'];
+            $PartsUsed = $_REQUEST['Parts'];
 
-        // Performing insert query execution
-        // here our table name is maintenancelog
-        $sql = "INSERT INTO maintenancelog VALUES ('$DateTime', '$Equipment', '$Milage', '$Hours', '$Mechanic', '$WorkPerformed', '$PartsUsed')";
+            // Performing insert query execution
+            // here our table name is maintenancelog
+            $sql = "INSERT INTO maintenancelog (DateTime, Equipment, Milage, Hours, Mechanic, WorkPerformed, PartsUsed) VALUES ('$DateTime', '$Equipment', '$Milage', '$Hours', '$Mechanic', '$WorkPerformed', '$PartsUsed')";
+            if (mysqli_query($conn, $sql)) {
+                header('url=index.php');
+                exit;
+                
+                
+            } else {
+                echo "ERROR: Hush! Sorry $sql. "
+                    . mysqli_error($conn);
+            }
 
-        if (mysqli_query($conn, $sql)) {
-            echo "<h3>data stored in a database successfully."
-                . " Please browse your localhost php my admin"
-                . " to view the updated data</h3>";
-
-            echo nl2br("\n$DateTime\n $Equipment\n "
-                . "$Milage\n $Hours\n $Mechanic\n $WorkPerformed\n $PartsUsed");
-        } else {
-            echo "ERROR: Hush! Sorry $sql. "
-                . mysqli_error($conn);
+           
         }
+
+
+
+
+
+
+
+
+
 
         // Close connection
         mysqli_close($conn);

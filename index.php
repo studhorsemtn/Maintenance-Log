@@ -106,7 +106,7 @@
             <div class="row" id="sub">
                 <div class="col-4"></div>
                 <div class="col-4" id="subButton">
-                    <button type="submit" class="btn btn-primary rounded-circle">Submit</button>
+                    <button type="submit" name="Submit" class="btn btn-primary rounded-circle">Submit</button>
                 </div>
                 <div class="col-4"></div>
             </div>
