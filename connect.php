@@ -41,26 +41,13 @@
             // here our table name is maintenancelog
             $sql = "INSERT INTO maintenancelog (DateTime, Equipment, Milage, Hours, Mechanic, WorkPerformed, PartsUsed) VALUES ('$DateTime', '$Equipment', '$Milage', '$Hours', '$Mechanic', '$WorkPerformed', '$PartsUsed')";
             if (mysqli_query($conn, $sql)) {
-                header('url=index.php');
-                exit;
-                
-                
+                header('location: index.php');
+                exit();
             } else {
                 echo "ERROR: Hush! Sorry $sql. "
                     . mysqli_error($conn);
             }
-
-           
         }
-
-
-
-
-
-
-
-
-
 
         // Close connection
         mysqli_close($conn);
