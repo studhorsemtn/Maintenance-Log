@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/4dc34d9f3c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="index.css">
   <link rel="icon" href="Images/logo.png" type="image/gif" sizes="16x16">
@@ -16,7 +15,7 @@
 <!-- javascript for populating the year form element -->
 
 <script type="text/javascript">
-  window.onload = function () {
+  window.onload = function() {
     //Reference the DropDownList.
     var ddlYears = document.getElementById("year");
 
@@ -58,7 +57,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Vehicle Information</a>
-          </li>          
+          </li>
         </ul>
       </div>
     </div>
@@ -90,7 +89,7 @@
       <div class="row">
         <div class="col">
           <label for="equipment" class="form-label">Equipment&nbsp;&#35</label>
-          <input type="number" class="form-control" name="datetime" id="equipment" required>
+          <input type="text" class="form-control" name="Equipment" id="equipment" required>
         </div>
         <div class="col">
           <label for="year" class="form-label">Year</label>
@@ -98,11 +97,11 @@
         </div>
         <div class="col">
           <label for="Make" class="form-label">Make</label>
-          <input type="text" class="form-control" name="make" id="name" required>
+          <input type="text" class="form-control" name="Make" id="make" required>
         </div>
         <div class="col">
           <label for="Model" class="form-label">Model</label>
-          <input type="text" class="form-control" name="model" id="model" required>
+          <input type="text" class="form-control" name="Model" id="model" required>
         </div>
       </div>
 
@@ -119,7 +118,7 @@
         <div class="col">
           <label for="Vin" class="form-label">Vin&nbsp;&#35</label>
           <input type="text" class="form-control" name="vin" id="vin" required>
-        </div>      
+        </div>
       </div>
 
       <div class="row">
@@ -174,11 +173,11 @@
       <div class="row">
         <div class="col">
           <label for="emisc1" class="form-label">Engine&nbsp;Misc&nbsp;&#35&nbsp;1</label>
-          <textarea name="emisc1" class="form-control" id="emisc1" cols="30" rows="1" required></textarea>
+          <textarea name="emisc1" class="form-control" id="emisc1" cols="60" rows="5" wrap="hard" required></textarea>
         </div>
         <div class="col">
           <label for="emisc2" class="form-label">Engine&nbsp;Misc&nbsp;&#35&nbsp;2</label>
-          <textarea name="emisc2" class="form-control" id="emisc2" cols="30" rows="1" required></textarea>
+          <textarea name="emisc2" class="form-control" id="emisc2" cols="60" rows="5" wrap="hard" required></textarea>
         </div>
       </div>
 
@@ -257,10 +256,6 @@
           <input type="text" name="Air2" id="Air2" class="form-control">
         </div>
       </div>
-
-
-
-
 
 
 
@@ -415,7 +410,7 @@
       <div class="row">
         <div class="col">
           <label for="steerSize" class="form-label">Steer&nbsp;Size</label>
-          <input type="text" class="form-control" name="steerSize" id="steerSize">
+          <input type="text" class="form-control" name="steerSize" id="steerSize" required>
         </div>
         <div class="col">
           <label for="pusher1" class="form-label">Pusher&nbsp;&#35&nbsp;1&nbsp;Size</label>
@@ -517,12 +512,8 @@
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 
 </html>

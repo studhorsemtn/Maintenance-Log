@@ -95,11 +95,11 @@
             <div class="row">
                 <div class="col">
                     <label for="parts" class="form-label"><i class="fa-solid fa-gear"></i>Parts&nbsp;Used:</label>
-                    <textarea name="Parts" class="form-control" id="parts" cols="30" rows="5" required></textarea>
+                    <textarea name="Parts" class="form-control" id="parts" cols="30" rows="5" wrap="hard" required></textarea>
                 </div>
                 <div class="col">
                     <label for="description" class="form-label"><i class="fa-solid fa-fan"></i>Work&nbsp;Performed</label>
-                    <textarea name="description" class="form-control" id="description" cols="30" rows="5" required></textarea>
+                    <textarea name="description" class="form-control" id="description" cols="30" rows="5" wrap="hard" required></textarea>
                 </div>
 
             </div>
