@@ -39,7 +39,8 @@
 
             // Performing insert query execution
             // here our table name is maintenancelog
-            $sql = "INSERT INTO maintenancelog (DateTime, Equipment, Milage, Hours, Mechanic, WorkPerformed, PartsUsed) VALUES ('$DateTime', '$Equipment', '$Milage', '$Hours', '$Mechanic', '$WorkPerformed', '$PartsUsed')";
+            $sql = "INSERT INTO maintenancelog (DateTime, Equipment, Milage, Hours, Mechanic, WorkPerformed, PartsUsed) 
+            VALUES ('$DateTime', '$Equipment', '$Milage', '$Hours', '$Mechanic', '$WorkPerformed', '$PartsUsed')";
             if (mysqli_query($conn, $sql)) {
                 header('location: index.php');
                 exit();

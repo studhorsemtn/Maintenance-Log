@@ -63,6 +63,10 @@ body {
     text-shadow: .05em .05em .15em rgb(117, 101, 101);
 }
 
+span.asterisk {
+    color: red;
+}
+
 
 
 hr.blue {

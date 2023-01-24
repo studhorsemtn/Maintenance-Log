@@ -71,13 +71,16 @@
     <H1 id="company"><img src="\maintenance_log\Images\logo.png" alt="Logo"></H1>
     <hr class="blue">
     <h2 class="title"> Equipment Information</h2>
+    <br>
+    <br>
+    <h4 class="title">All Fields with an Asterisk&nbsp;<span class="asterisk">&nbsp;&#42</span> are Required</h4>
   </header>
 
   <!-- End Header -->
 
 
   <!-- Begin Form -->
-  <form action="">
+  <form action="fleetInfo.php" method="post">
     <div class="container">
 
 
@@ -88,19 +91,19 @@
 
       <div class="row">
         <div class="col">
-          <label for="equipment" class="form-label">Equipment&nbsp;&#35</label>
+          <label for="equipment" class="form-label">Equipment&nbsp;&#35<span class="asterisk">&nbsp;&#42</span></label>
           <input type="text" class="form-control" name="Equipment" id="equipment" required>
         </div>
         <div class="col">
-          <label for="year" class="form-label">Year</label>
+          <label for="year" class="form-label">Year<span class="asterisk">&nbsp;&#42</span></label>
           <select name="Year" class="form-control" id="year"></select>
         </div>
         <div class="col">
-          <label for="Make" class="form-label">Make</label>
+          <label for="Make" class="form-label">Make <span class="asterisk">&nbsp;&#42</span></label>
           <input type="text" class="form-control" name="Make" id="make" required>
         </div>
         <div class="col">
-          <label for="Model" class="form-label">Model</label>
+          <label for="Model" class="form-label">Model <span class="asterisk">&nbsp;&#42</span></label>
           <input type="text" class="form-control" name="Model" id="model" required>
         </div>
       </div>
@@ -108,27 +111,27 @@
 
       <div class="row">
         <div class="col">
-          <label for="hydOil" class="form-label">Hydrolic&nbsp;Oil&nbsp;Type</label>
-          <input type="text" name="hydOil" id="hydOil" class="form-control">
+          <label for="hydOil" class="form-label">Hydrolic&nbsp;Oil&nbsp;Type&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" name="hydOil" id="hydOil" class="form-control" required>
         </div>
         <div class="col">
-          <label for="hydCap" class="form-label">Hydrolic&nbsp;Oil&nbsp;Capacity</label>
-          <input type="text" name="hydCap" id="hydCap" class="form-control">
+          <label for="hydCap" class="form-label">Hydrolic&nbsp;Oil&nbsp;Capacity&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" name="hydCap" id="hydCap" class="form-control" required>
         </div>
         <div class="col">
-          <label for="Vin" class="form-label">Vin&nbsp;&#35</label>
+          <label for="Vin" class="form-label">Vin&nbsp;&#35 <span class="asterisk">&nbsp;&#42</span></label>
           <input type="text" class="form-control" name="vin" id="vin" required>
         </div>
       </div>
 
       <div class="row">
         <div class="col">
-          <label for="belt1" class="form-label">Belt&nbsp;&#35&nbsp;1</label>
-          <input type="text" name="belt1" id="belt1" class="form-control">
+          <label for="belt1" class="form-label">Belt&nbsp;&#35&nbsp;1&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" name="belt1" id="belt1" class="form-control" required>
         </div>
         <div class="col">
-          <label for="belt2" class="form-label">Belt&nbsp;&#35&nbsp;2</label>
-          <input type="text" name="belt2" id="belt2" class="form-control">
+          <label for="belt2" class="form-label">Belt&nbsp;&#35&nbsp;2&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" name="belt2" id="belt2" class="form-control" required>
         </div>
       </div>
 
@@ -144,29 +147,29 @@
 
       <div class="row">
         <div class="col">
-          <label for="EngineMake" class="form-label">Make</label>
+          <label for="EngineMake" class="form-label">Make&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
           <input type="text" class="form-control" name="emake" id="emake" required>
         </div>
         <div class="col">
-          <label for="EngineModel" class="form-label">Model</label>
+          <label for="EngineModel" class="form-label">Model&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
           <input type="text" class="form-control" name="emodel" id="emodel" required>
         </div>
         <div class="col">
-          <label for="serial" class="form-label">Serial&nbsp;&#35</label>
+          <label for="serial" class="form-label">Serial&nbsp;&#35&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
           <input type="text" class="form-control" name="serial" id="serial" required>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <label for="eArrangement" class="form-label">Engine&nbsp;Arrangement&nbsp;&#35</label>
+          <label for="eArrangement" class="form-label">Engine&nbsp;Arrangement&nbsp;&#35&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
           <input type="text" class="form-control" name="arrange" id="arrange" required>
         </div>
         <div class="col">
-          <label for="oilCap" class="form-label">Oil&nbsp;Capacity</label>
+          <label for="oilCap" class="form-label">Oil&nbsp;Capacity&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
           <input type="text" class="form-control" name="oilCap" id="oilCap" required>
         </div>
         <div class="col">
-          <label for="oilType" class="form-label">Oil&nbsp;Type</label>
+          <label for="oilType" class="form-label">Oil&nbsp;Type&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
           <input type="text" class="form-control" name="oilType" id="oilType" required>
         </div>
       </div>
@@ -196,12 +199,12 @@
 
       <div class="row">
         <div class="col">
-          <label for="oilF1" class="form-label">Engine&nbsp;Oil&nbsp;Filter&nbsp;&#35&nbsp;1</label>
+          <label for="oilF1" class="form-label">Engine&nbsp;Oil&nbsp;Filter&nbsp;&#35&nbsp;1&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
           <input type="text" class="form-control" name="oilF1" id="oilF1" required>
         </div>
         <div class="col">
           <label for="oilF2" class="form-label">Engine&nbsp;Oil&nbsp;Filter&nbsp;&#35&nbsp;2</label>
-          <input type="text" class="form-control" name="oilF2" id="oilF2" required>
+          <input type="text" class="form-control" name="oilF2" id="oilF2">
         </div>
         <div class="col">
           <label for="coolant" class="form-label">Coolant&nbsp;Filter</label>
@@ -210,12 +213,12 @@
       </div>
       <div class="row">
         <div class="col">
-          <label for="transFilter" class="form-label">Transmisson&nbsp;Filter</label>
-          <input type="text" class="form-control" name="transFilter" id="transFilter">
+          <label for="transFilter" class="form-label">Transmisson&nbsp;Filter&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" class="form-control" name="transFilter" id="transFilter" required>
         </div>
         <div class="col">
-          <label for="hydFil1" class="form-label">Hydraulic&nbsp;Filter&nbsp;1</label>
-          <input type="text" name="hdyFil1" id="hydFil1" class="form-control">
+          <label for="hydFil1" class="form-label">Hydraulic&nbsp;Filter&nbsp;1&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" name="hdyFil1" id="hydFil1" class="form-control" required>
         </div>
         <div class="col">
           <label for="hydFil2" class="form-label">Hydraulic&nbsp;Filter&nbsp;2</label>
@@ -224,12 +227,12 @@
       </div>
       <div class="row">
         <div class="col">
-          <label for="powSteer" class="form-label">Power&nbsp;Steering</label>
-          <input type="text" name="powSteer" id="powSteer" class="form-control">
+          <label for="powSteer" class="form-label">Power&nbsp;Steering&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" name="powSteer" id="powSteer" class="form-control" required>
         </div>
         <div class="col">
-          <label for="fuel1" class="form-label">Fuel&nbsp;Filter&nbsp;1</label>
-          <input type="text" name="fule1" id="fuel1" class="form-control">
+          <label for="fuel1" class="form-label">Fuel&nbsp;Filter&nbsp;1&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" name="fule1" id="fuel1" class="form-control" required>
         </div>
         <div class="col">
           <label for="fuel2" class="form-label">Fuel&nbsp;Filter&nbsp;2</label>
@@ -248,8 +251,8 @@
       </div>
       <div class="row">
         <div class="col">
-          <label for="Air1" class="form-label">Air&nbsp;1</label>
-          <input type="text" name="Air1" id="Air1" class="form-control">
+          <label for="Air1" class="form-label">Air&nbsp;1&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" name="Air1" id="Air1" class="form-control" required>
         </div>
         <div class="col">
           <label for="Air2" class="form-label">Air&nbsp;2</label>
@@ -269,26 +272,26 @@
 
       <div class="row">
         <div class="col">
-          <label for="transmake" class="form-label">Make</label>
-          <input type="text" class="form-control" name="transmake" id="transmake">
+          <label for="transmake" class="form-label">Make&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" class="form-control" name="transmake" id="transmake" required>
         </div>
         <div class="col">
-          <label for="transmodel" class="form-label">Model</label>
-          <input type="text" class="form-control" name="transmodel" id="transmodel">
+          <label for="transmodel" class="form-label">Model&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" class="form-control" name="transmodel" id="transmodel" required>
         </div>
         <div class="col">
-          <label for="transSer" class="form-label">Serial&nbsp;&#35</label>
-          <input type="text" class="form-control" name="transSer" id="transSer">
+          <label for="transSer" class="form-label">Serial&nbsp;&#35&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" class="form-control" name="transSer" id="transSer" required>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <label for="transOil" class="form-label">Transmission&nbsp;Oil&nbsp;Capacity</label>
-          <input type="text" name="transOil" id="transOil" class="form-control">
+          <label for="transCap" class="form-label">Transmission&nbsp;Oil&nbsp;Capacity&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" name="transCap" id="transCap" class="form-control" required>
         </div>
         <div class="col">
-          <label for="transCap" class="form-label">Transmission&nbsp;Oil&nbsp;Type</label>
-          <input type="text" name="transCap" id="transCap" class="form-control">
+          <label for="transType" class="form-label">Transmission&nbsp;Oil&nbsp;Type&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" name="transType" id="transType" class="form-control" required>
         </div>
       </div>
 
@@ -312,28 +315,28 @@
 
       <div class="row">
         <div class="col">
-          <label for="steermake" class="form-label">Make</label>
-          <input type="text" class="form-control" name="steermake" id="steermake">
+          <label for="steermake" class="form-label">Make&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" class="form-control" name="steermake" id="steermake" required>
         </div>
         <div class="col">
-          <label for="steermodel" class="form-label">Model</label>
-          <input type="text" class="form-control" name="steermodel" id="steermodel">
+          <label for="steermodel" class="form-label">Model&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" class="form-control" name="steermodel" id="steermodel" required>
         </div>
         <div class="col">
-          <label for="steerRatio" class="form-label">Ratio</label>
-          <input type="text" class="form-control" name="steerRatio" id="steerRatio">
+          <label for="steerRatio" class="form-label">Ratio&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" class="form-control" name="steerRatio" id="steerRatio" required>
         </div>
       </div>
 
 
       <div class="row">
         <div class="col-6">
-          <label for="steerOil" class="form-label">Oil&nbsp;Type&nbsp;1</label>
-          <input type="text" name="steerOil" id="steerOil" class="form-control">
+          <label for="steerOil" class="form-label">Oil&nbsp;Type&nbsp;1&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" name="steerOil" id="steerOil" class="form-control" required>
         </div>
         <div class="col-6">
-          <label for="steerOilCap" class="form-label">Oil&nbsp;Capacity&nbsp;1</label>
-          <input type="text" name="steerOilCap" id="steerOilCap" class="form-control">
+          <label for="steerOilCap" class="form-label">Oil&nbsp;Capacity&nbsp;1&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" name="steerOilCap" id="steerOilCap" class="form-control" required>
         </div>
       </div>
 
@@ -361,27 +364,27 @@
 
       <div class="row">
         <div class="col">
-          <label for="drivemake" class="form-label">Make</label>
-          <input type="text" class="form-control" name="drivemake" id="drivemake">
+          <label for="drivemake" class="form-label">Make&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" class="form-control" name="drivemake" id="drivemake" required>
         </div>
         <div class="col">
-          <label for="drivemodel" class="form-label">Model</label>
-          <input type="text" class="form-control" name="drivemodel" id="drivemodel">
+          <label for="drivemodel" class="form-label">Model&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" class="form-control" name="drivemodel" id="drivemodel" required>
         </div>
         <div class="col">
-          <label for="driveRatio" class="form-label">Ratio</label>
-          <input type="text" class="form-control" name="driveRatio" id="driveRatio">
+          <label for="driveRatio" class="form-label">Ratio&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" class="form-control" name="driveRatio" id="driveRatio" required>
         </div>
       </div>
 
       <div class="row">
         <div class="col-6">
-          <label for="driveOil" class="form-label">Oil&nbsp;Type&nbsp;1</label>
-          <input type="text" name="driveOil" id="driveOil" class="form-control">
+          <label for="driveOil" class="form-label">Oil&nbsp;Type&nbsp;1&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" name="driveOil" id="driveOil" class="form-control" required>
         </div>
         <div class="col-6">
-          <label for="driveOilCap" class="form-label">Oil&nbsp;Capacity&nbsp;1</label>
-          <input type="text" name="driveOilCap" id="driveOilCap" class="form-control">
+          <label for="driveOilCap" class="form-label">Oil&nbsp;Capacity&nbsp;1&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" name="driveOilCap" id="driveOilCap" class="form-control" required>
         </div>
       </div>
 
@@ -413,8 +416,8 @@
           <input type="text" class="form-control" name="steerSize" id="steerSize" required>
         </div>
         <div class="col">
-          <label for="pusher1" class="form-label">Pusher&nbsp;&#35&nbsp;1&nbsp;Size</label>
-          <input type="text" class="form-control" name="pusher1" id="pusher1">
+          <label for="pusher1" class="form-label">Pusher&nbsp;&#35&nbsp;1&nbsp;Size&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
+          <input type="text" class="form-control" name="pusher1" id="pusher1" required>
         </div>
         <div class="col">
           <label for="pusher2" class="form-label">Pusher&nbsp;&#35&nbsp;2&nbsp;Size</label>
@@ -423,21 +426,21 @@
       </div>
       <div class="row">
         <div class="col">
-          <label for="driveTire" class="form-label">Drive&nbsp;Size</label>
+          <label for="driveTire" class="form-label">Drive&nbsp;Size&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
           <input type="text" class="form-control" name="driveTire" id="driveTire" required>
         </div>
         <div class="col">
-          <label for="tag1" class="form-label">Tag&nbsp;&#35&nbsp;1&nbsp;Size</label>
+          <label for="tag1" class="form-label">Tag&nbsp;&#35&nbsp;1&nbsp;Size&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
           <input type="text" class="form-control" name="tag1" id="tag1" required>
         </div>
         <div class="col">
           <label for="tag2" class="form-label">Tag&nbsp;&#35&nbsp;2&nbsp;Size</label>
-          <input type="text" class="form-control" name="tag2" id="tag2" required>
+          <input type="text" class="form-control" name="tag2" id="tag2">
         </div>
       </div>
 
 
-      
+
       <br>
       <br>
       <hr class="blue">
@@ -493,6 +496,13 @@
         <div class="col-4">
           <label for="drive" class="form-label">Drive&nbsp;Axel&nbsp;&#35</label>
           <input type="text" class="form-control" name="drive" id="drive">
+        </div>
+        <div class="col-4"></div>
+      </div>
+      <div class="row" id="sub">
+        <div class="col-4"></div>
+        <div class="col-4" id="subButton">
+          <button type="submit" name="Submit" class="btn btn-primary rounded-circle">Submit</button>
         </div>
         <div class="col-4"></div>
       </div>

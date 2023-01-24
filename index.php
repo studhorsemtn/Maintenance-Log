@@ -42,6 +42,9 @@
         <h1 id="company"><img src="\maintenance_log\Images\logo.png" alt="Logo"></h1>
         <hr class="blue">
         <h3 class="title">Truck Maintenance Log</h3>
+        <br>
+        <br>
+        <h4 class="title">All Fields with an Asterisk&nbsp;<span class="asterisk">&nbsp;&#42</span> are Required</h4>
     </header>
 
     <!-- End of Header -->
@@ -52,11 +55,11 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <label for="datetime" class="form-label"><i class="fa-solid fa-calendar-days"></i>Date&nbsp;&#38&nbsp;Time:</label>
+                    <label for="datetime" class="form-label"><i class="fa-solid fa-calendar-days"></i>Date&nbsp;&#38&nbsp;Time:&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
                     <input type="datetime-local" class="form-control" name="datetime" id="datetime" required>
                 </div>
                 <div class="col">
-                    <label for="equipment" class="form-label"><i class="fa-solid fa-truck-monster"></i>Equipment</label>
+                    <label for="equipment" class="form-label"><i class="fa-solid fa-truck-monster"></i>Equipment&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
                     <select name="Equipment" class="form-control" id="equipment" required>
                         <optgroup label="Trucks">
                             <option value="75">75</option>
@@ -75,11 +78,11 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <label for="milage" class="form-label"><i class="fa-solid fa-gauge"></i>Milage:</label>
+                    <label for="milage" class="form-label"><i class="fa-solid fa-gauge"></i>Milage:&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
                     <input type="number" class="form-control" name="milage" id="milage" required>
                 </div>
                 <div class="col">
-                    <label for="hours" class="form-label"><i class="fa-regular fa-clock"></i>Hours:</label>
+                    <label for="hours" class="form-label"><i class="fa-regular fa-clock"></i>Hours:&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
                     <input type="number" class="form-control" name="hours" id="hours" required>
                 </div>
 
@@ -87,18 +90,18 @@
             <div class="row">
                 <div class="col-4"></div>
                 <div class="col-4">
-                    <label for="mechanic" class="form-label"><i class="fa-solid fa-wrench"></i>Mechanic</label>
+                    <label for="mechanic" class="form-label"><i class="fa-solid fa-wrench"></i>Mechanic&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
                     <input type="text" class="form-control" name="mechanic" id="mechanic" required>
                 </div>
                 <div class="col-4"></div>
             </div>
             <div class="row">
                 <div class="col">
-                    <label for="parts" class="form-label"><i class="fa-solid fa-gear"></i>Parts&nbsp;Used:</label>
+                    <label for="parts" class="form-label"><i class="fa-solid fa-gear"></i>Parts&nbsp;Used:&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
                     <textarea name="Parts" class="form-control" id="parts" cols="30" rows="5" wrap="hard" required></textarea>
                 </div>
                 <div class="col">
-                    <label for="description" class="form-label"><i class="fa-solid fa-fan"></i>Work&nbsp;Performed</label>
+                    <label for="description" class="form-label"><i class="fa-solid fa-fan"></i>Work&nbsp;Performed&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
                     <textarea name="description" class="form-control" id="description" cols="30" rows="5" wrap="hard" required></textarea>
                 </div>
 
@@ -106,7 +109,7 @@
             <div class="row" id="sub">
                 <div class="col-4"></div>
                 <div class="col-4" id="subButton">
-                    <button type="submit" onclick="alert('Data Saved Successfully');"  name="Submit" class="btn btn-primary rounded-circle">Submit</button>
+                    <button type="submit" onclick="alert('Data Saved Successfully');" name="Submit" class="btn btn-primary rounded-circle">Submit</button>
                 </div>
                 <div class="col-4"></div>
             </div>
