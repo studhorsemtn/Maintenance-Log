@@ -11,6 +11,7 @@
 <body>
     <center>
         <?php
+        mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
         $DateTime = $Equipment = $Milage = $Hours = $Mechanic = $WorkPerformed = $PartsUsed = "";
 
@@ -39,19 +40,28 @@
 
             // Performing insert query execution
             // here our table name is maintenancelog
-            $sql = "INSERT INTO maintenancelog (DateTime, Equipment, Milage, Hours, Mechanic, WorkPerformed, PartsUsed) 
-            VALUES ('$DateTime', '$Equipment', '$Milage', '$Hours', '$Mechanic', '$WorkPerformed', '$PartsUsed')";
-            if (mysqli_query($conn, $sql)) {
-                header('location: index.php');
+            $sql = $conn->prepare("INSERT INTO maintenancelog (DateTime, Equipment, Milage, Hours, Mechanic, WorkPerformed, PartsUsed) 
+            VALUES (?,?,?,?,?,?,?)");
+
+            $sql->bind_param('sssssss', $DateTime, $Equipment, $Milage, $Hours, $Mechanic, $WorkPerformed, $PartsUsed);
+
+            $sql->execute();
+
+            if (
+                $sql->execute()
+            ) {
+                echo "<h1>Data Successfully Saved</h1>";
+                header( "refresh:2; url=index.php");
                 exit();
             } else {
                 echo "ERROR: Hush! Sorry $sql. "
-                    . mysqli_error($conn);
+                . mysqli_error($conn,$sql);
             }
         }
 
         // Close connection
-        mysqli_close($conn);
+        $sql->close();
+        $conn->close();
         ?>
     </center>
 </body>

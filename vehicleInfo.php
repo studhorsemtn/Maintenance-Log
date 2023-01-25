@@ -218,7 +218,7 @@
         </div>
         <div class="col">
           <label for="hydFil1" class="form-label">Hydraulic&nbsp;Filter&nbsp;1&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
-          <input type="text" name="hdyFil1" id="hydFil1" class="form-control" required>
+          <input type="text" name="hydFil1" id="hydFil1" class="form-control" required>
         </div>
         <div class="col">
           <label for="hydFil2" class="form-label">Hydraulic&nbsp;Filter&nbsp;2</label>
@@ -232,7 +232,7 @@
         </div>
         <div class="col">
           <label for="fuel1" class="form-label">Fuel&nbsp;Filter&nbsp;1&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
-          <input type="text" name="fule1" id="fuel1" class="form-control" required>
+          <input type="text" name="fuel1" id="fuel1" class="form-control" required>
         </div>
         <div class="col">
           <label for="fuel2" class="form-label">Fuel&nbsp;Filter&nbsp;2</label>
@@ -412,7 +412,7 @@
 
       <div class="row">
         <div class="col">
-          <label for="steerSize" class="form-label">Steer&nbsp;Size</label>
+          <label for="steerSize" class="form-label">Steer&nbsp;Size&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
           <input type="text" class="form-control" name="steerSize" id="steerSize" required>
         </div>
         <div class="col">
