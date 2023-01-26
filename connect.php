@@ -47,16 +47,12 @@
 
             $sql->execute();
 
-            if (
-                $sql->execute()
-            ) {
-                echo "<h1>Data Successfully Saved</h1>";
-                header( "refresh:2; url=index.php");
-                exit();
-            } else {
-                echo "ERROR: Hush! Sorry $sql. "
-                . mysqli_error($conn,$sql);
-            }
+
+            echo "<h1>Data Successfully Saved</h1>";
+            header("refresh:2; url=index.php");
+            exit();
+
+            
         }
 
         // Close connection

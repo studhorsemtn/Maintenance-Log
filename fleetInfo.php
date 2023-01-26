@@ -185,21 +185,14 @@
 
             $sql->execute();
 
-            if (
-                $sql->execute()
-            ) {
-                echo "<h1>Data Successfully Saved</h1>";
-                header('location: index.php');
-                exit();
-            } else {
-                echo "ERROR: Hush! Sorry $sql. "
-                . mysqli_error($conn);
-            }
 
-            }
+            echo "<h1>Data Successfully Saved</h1>";
+            header('location: index.php');
+            exit();
+        }
 
-           
-            
+
+
 
         // Close connection
         $sql->close();
