@@ -40,23 +40,31 @@
 
             // Performing insert query execution
             // here our table name is maintenancelog
-            $sql = $conn->prepare("INSERT INTO maintenancelog (DateTime, Equipment, Milage, Hours, Mechanic, WorkPerformed, PartsUsed) 
+            $stmt = $conn->prepare("INSERT INTO maintenancelog (DateTime, Equipment, Milage, Hours, Mechanic, WorkPerformed, PartsUsed) 
             VALUES (?,?,?,?,?,?,?)");
 
-            $sql->bind_param('sssssss', $DateTime, $Equipment, $Milage, $Hours, $Mechanic, $WorkPerformed, $PartsUsed);
+            $stmt->bind_param('sssssss', $DateTime, $Equipment, $Milage, $Hours, $Mechanic, $WorkPerformed, $PartsUsed);
 
-            $sql->execute();
+            $stmt->execute();
+
+            $sql = "Select * from maintenancelog where Equipment=?";
+            $stmt2 = $conn->prepare($sql);
+            $stmt2->bind_param("s", $Equipment);
+            $stmt2->execute();
+
+            $result = $stmt->get_result();
+            while ($row = $result->fetch_assoc()); {
+                echo $row['Equipment'];
+            }
 
 
             echo "<h1>Data Successfully Saved</h1>";
-            header("refresh:2; url=index.php");
+            header("refresh:10; url=index.php");
             exit();
-
-            
         }
 
         // Close connection
-        $sql->close();
+        $stmt->close();
         $conn->close();
         ?>
     </center>
