@@ -141,3 +141,13 @@ select {
     background-color: #85edffa6;
     border-color: #0d6efd;
 }
+
+
+.report {
+    text-align: center;
+    width: 100%;
+}
+
+tr:nth-child(even) {
+    background-color: aqua;
+}

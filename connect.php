@@ -47,16 +47,7 @@
 
             $stmt->execute();
 
-            $sql = "Select * from maintenancelog where Equipment=?";
-            $stmt2 = $conn->prepare($sql);
-            $stmt2->bind_param("s", $Equipment);
-            $stmt2->execute();
-
-            $result = $stmt->get_result();
-            while ($row = $result->fetch_assoc()); {
-                echo $row['Equipment'];
-            }
-
+            
 
             echo "<h1>Data Successfully Saved</h1>";
             header("refresh:10; url=index.php");

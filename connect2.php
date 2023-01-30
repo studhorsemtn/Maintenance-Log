@@ -187,7 +187,7 @@
 
 
             echo "<h1>Data Successfully Saved</h1>";
-            header('location: index.php');
+            header('"refresh:10; url=index.php"');
             exit();
         }
 
