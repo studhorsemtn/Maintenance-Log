@@ -12,7 +12,8 @@
 
 <body>
 
-    <?php
+    
+    <?php    
 
     $conn = mysqli_connect("localhost", "root", "", "equipment_info");
 
@@ -22,23 +23,32 @@
             . mysqli_connect_error());
     }
 
-    $sql = "SELECT * FROM maintenancelog where DateTime  BETWEEN '2023-1-1' AND '2023-1-05'";
+    
+    $sql = "SELECT * FROM maintenancelog WHERE Equipment = 'equipment' 
+    AND DateTime = 'startdate' 
+    AND DateTime = 'endDate' ;" ;
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
         echo "<table class='report'><tr><th>Date</th><th>Equipment</th><th>Milage</th><th>Hours</th><th>Mechanic</th><th>Work Performed</th>
-        <th>Parts Used</tr>";       
-        
-        
+        <th>Parts Used</tr>";
+
+
         while ($row = $result->fetch_assoc()) {
-            echo "<tr><td>" . $row["DateTime"] . "</td><td>" . $row["Equipment"] . "</td><td>" . $row["Milage"] . "</td><td>" . $row["Hours"]
-                . "</td><td>" . $row["Mechanic"] . "</td><td>" . $row["WorkPerformed"] . "</td><td>" . $row["PartsUsed"] . "</td></tr> ";
-        }        
+            echo "<tr>
+            <td>" . $row["DateTime"] . "</td>
+            <td>" . $row["Equipment"] . "</td>
+            <td>" . $row["Milage"] . "</td>
+            <td>" . $row["Hours"] . "</td>
+            <td>" . $row["Mechanic"] . "</td>
+            <td>" . $row["WorkPerformed"] . "</td>
+            <td>" . $row["PartsUsed"] . "</td>
+            </tr> ";
+        }
         echo "</table>";
-       
     } else {
         echo "0 Results";
-    }    
+    }
 
     $conn->close();
 

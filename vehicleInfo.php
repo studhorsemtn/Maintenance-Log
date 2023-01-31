@@ -59,7 +59,7 @@
             <a class="nav-link" href="#">Vehicle Information</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="reports_connect.php">Reports</a>
+            <a class="nav-link" href="reports.php">Reports</a>
           </li>
         </ul>
       </div>
@@ -94,7 +94,7 @@
 
       <div class="row">
         <div class="col">
-          <label for="equipment" class="form-label">Equipment&nbsp;&#35<span class="asterisk">&nbsp;&#42</span></label>
+          <label for="equipment" class="form-label">Equipment&nbsp;<span class="asterisk">&nbsp;&#42</span></label>
           <input type="text" class="form-control" name="Equipment" id="equipment" required>
         </div>
         <div class="col">
